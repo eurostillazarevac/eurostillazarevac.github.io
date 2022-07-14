@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EuroStil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/featherlight.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/featherlight.min.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+
+</head>
+
+<body>
+    <header id="top">
+        <div class="wrapper">
+            <img class="logo" src="images/logo.png" />
+            <nav>
+                <ul id="navigation">
+                    <li><a href="#home">Početna</a></li>
+                    <li><a href="#services">O nama</a></li>
+                    <li><a href="#gallery">Galerija</a></li>
+                    <li><a href="#location">Lokacija</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="mySlides fade">
+            <img src="images/img1.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/img2.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/img3.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/img4.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/img5.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!--<a name="home"></a>
+        <div class="wrapper">
+            <h2>EuroStil</h2>
+            <p class="subtitle">Uređujemo Vaš životni prostor!</p>
+            <div class="buttons">
+                <a href="#" class="button-1">Try Now</a>
+                <a href="#" class="button-2">Learn More</a>
+            </div>
+        </div>-->
+    </section>
+
+    <!--<section class="video-section">
+        <div class="wrapper">
+            <h3>Ko smo mi?</h3>
+            <p class="subtitle">Watch our promotional video</p>
+            <video width="790" src="video.mp4" poster="images/video-poster.jpg" onclick="this.play();" controls preload>
+				<p>Video playback unsupported</p>
+			</video>
+            <a href="#" class="button-1">Begin</a>
+        </div>
+    </section>-->
+
+    <section class="services-section">
+        <a name="services"></a>
+        <div class="wrapper">
+            <h3>O nama</h3>
+            <p class="subtitle">Naša kompanija nudi različite vrste usloga.</p>
+            <ul class="services-list">
+                <li>
+                    <div class="image-container">
+                        <img src="images/sideboard.png" alt="services icon">
+                    </div>
+                    <h5>Nameštaj po meri</h5>
+                    <p>Bilo da je u pitanju ceo stan, jedna prostorija ili samo komad nameštaja, mi kreiramo svaki deo sa puno pažnje kako bi se savršeno uklopio u prostor!
+                    </p>
+                </li>
+                <li>
+                    <div class="image-container">
+                        <img src="images/vase.png" alt="services icon">
+                    </div>
+                    <h5>Galerija</h5>
+                    <p>Naš izložbeni salon nudi različite vrste galerijskih proizvoda koji upotpunjuju Vaš prostor. Od fotelja i ljuljaški, preko lampa i ramova za slike, pa do najsitnijih detalja za kuhinju.</p>
+                </li>
+                <li>
+                    <div class="image-container">
+                        <img style="color: white" src="images/curtains.png" alt="services icon">
+                    </div>
+                    <h5>Zavese</h5>
+                    <p>Kažu da se najbolji drže zajedno. Zato mi sarađujemo sa Mega zavesama koje su tu da oboje prostor i naprave romantičnu atmosferu.</p>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </section>
+
+    <section class="text-section">
+        <div class="wrapper">
+            <div class="image align-left">
+                <img src="images/light-bulb.png" alt="light bulb" style="height: 400px;" class="align-left">
+            </div>
+            <div class="text align-left">
+                <h3>Mi volimo inovativna rešenja</h3>
+                <p class="subtitle">Posmatrajte kako se vaše ideje pretvaraju u stvarnost!</p>
+                <p>Ono što nas razlikuje od drugih jeste unikatnost. Svaki komad nameštaja je jedinstven i kreiran samo za Vas i Vaše potrebe. Biramo boju, materijal, kao i dimenzije koje će se najviše uklopiti sa ostatkom prostorije. Trudimo se da spojimo
+                    lepo i korisno tako što maksimalno koristimo prostor i prilagođavamo se. Ukoliko su Vam potrebne konsultacije, kontaktirajte nas!
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <!--<section class="features-section">
+        <div class="wrapper">
+            <ul class="feature-squares">
+                <li>
+                    <div class="image">
+                        <img src="images/icon-eye.png" alt="feature icon">
+                    </div>
+                    <div class="text">
+                        <h5>Attention to Detail</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dignissim sapien. Mauris congue faucibus enim, vel molestie lectus.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="image">
+                        <img src="images/icon-clock.png" alt="feature icon">
+                    </div>
+                    <div class="text">
+                        <h5>Save Time</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dignissim sapien. Mauris congue faucibus enim, vel molestie lectus.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="image">
+                        <img src="images/icon-dashboard.png" alt="feature icon">
+                    </div>
+                    <div class="text">
+                        <h5>Complete Control</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dignissim sapien. Mauris congue faucibus enim, vel molestie lectus.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="image">
+                        <img src="images/icon-headset.png" alt="feature icon">
+                    </div>
+                    <div class="text">
+                        <h5>24/7 Support</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut dignissim sapien. Mauris congue faucibus enim, vel molestie lectus.</p>
+                    </div>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </section>
+
+    <section class="text-section">
+        <div class="wrapper">
+            <div class="image align-right">
+                <img src="images/chat-bubbles.png" alt="light bulb" class="align-left" style="margin-top: 60px;">
+            </div>
+            <div class="text align-right">
+                <h3>Let’s Talk</h3>
+                <p class="subtitle">We’re here to listen to your needs</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida blandit lacus a laoreet. Nullam sollicitudin urna metus, at malesuada orci fringilla in. </p>
+                <ul class="list-checkmarks">
+                    <li>Curabitur eleifend risus vitae ligula semper scelerisque.</li>
+                    <li>Fusce interdum suscipit ipsum.</li>
+                    <li>Quis mattis metus posuere sit amet.</li>
+                    <li>Mauris rutrum imperdiet tortor.</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>-->
+
+    <!--<section class="team-section">
+        <a name="about"></a>
+        <div class="wrapper">
+            <h3>The Team</h3>
+            <p class="subtitle">Get to know us</p>
+            <ul class="team-list">
+                <li>
+                    <div class="image-container">
+                        <img src="images/team-1.jpg" alt="team member">
+                    </div>
+                    <h5>John Garret</h5>
+                    <p>Lead Designer</p>
+                    <ul class="social-links">
+                        <li><a href="#" class="facebook">Facebook</a></li>
+                        <li><a href="#" class="twitter">Twitter</a></li>
+                        <li><a href="#" class="google">Google+</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="image-container">
+                        <img src="images/team-2.jpg" alt="team member">
+                    </div>
+                    <h5>Alice Mills</h5>
+                    <p>Lead Designer</p>
+                    <ul class="social-links">
+                        <li><a href="#" class="facebook">Facebook</a></li>
+                        <li><a href="#" class="twitter">Twitter</a></li>
+                        <li><a href="#" class="google">Google+</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="image-container">
+                        <img src="images/team-3.jpg" alt="team member">
+                    </div>
+                    <h5>Scott Harris</h5>
+                    <p>Lead Designer</p>
+                    <ul class="social-links">
+                        <li><a href="#" class="facebook">Facebook</a></li>
+                        <li><a href="#" class="twitter">Twitter</a></li>
+                        <li><a href="#" class="google">Google+</a></li>
+                    </ul>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </section>-->
+
+    <section class="portfolio-section">
+        <a name="gallery"></a>
+        <h3>Galerija</h3>
+        <p class="subtitle">Zavirite u naš svet!</p>
+
+        <ul class="portfolio-list">
+            <li class="item">
+                <a href="images/gallery1.jpg" data-featherlight="images/gallery1.jpg" class="photo-overlay">
+                    <img src="images/gallery1.jpg" alt="" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="images/gallery2.jpg" data-featherlight="images/gallery2.jpg" class="photo-overlay">
+                    <img src="images/gallery2.jpg" alt="" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="images/gallery3.jpg" data-featherlight="images/gallery3.jpg" class="photo-overlay">
+                    <img src="images/gallery3.jpg" alt="" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="images/gallery4.jpg" data-featherlight="images/gallery3.jpg" class="photo-overlay">
+                    <img src="images/gallery4.jpg" alt="" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="images/gallery5.jpg" data-featherlight="images/gallery3.jpg" class="photo-overlay">
+                    <img src="images/gallery5.jpg" alt="" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="images/gallery6.jpg" data-featherlight="images/gallery3.jpg" class="photo-overlay">
+                    <img src="images/gallery6.jpg" alt="" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="images/gallery7.jpg" data-featherlight="images/gallery1.jpg" class="photo-overlay">
+                    <img src="images/gallery7.jpg" alt="" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="images/gallery8.jpg" data-featherlight="images/gallery2.jpg" class="photo-overlay">
+                    <img src="images/gallery8.jpg" alt="" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="images/gallery9.jpg" data-featherlight="images/gallery3.jpg" class="photo-overlay">
+                    <img src="images/gallery9.jpg" alt="" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="images/gallery10.jpg" data-featherlight="images/gallery3.jpg" class="photo-overlay">
+                    <img src="images/gallery10.jpg" alt="" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="images/gallery11.jpg" data-featherlight="images/gallery3.jpg" class="photo-overlay">
+                    <img src="images/gallery11.jpg" alt="" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="images/gallery12.jpg" data-featherlight="images/gallery3.jpg" class="photo-overlay">
+                    <img src="images/gallery12.jpg" alt="" />
+                </a>
+            </li>
+            <!--<li class="item">
+                <a href="images/project-4.jpg" data-featherlight="images/project-4.jpg" class="photo-overlay">
+                    <img src="images/project-4.jpg" alt="" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="images/project-5.jpg" data-featherlight="images/project-5.jpg" class="photo-overlay">
+                    <img src="images/project-5.jpg" alt="" />
+                </a>
+            </li>
+            <li class="item">
+                <a href="images/project-6.jpg" data-featherlight="images/project-6.jpg" class="photo-overlay">
+                    <img src="images/project-6.jpg" alt="" />
+                </a>
+            </li>-->
+            <div class="clear"></div>
+        </ul>
+    </section>
+
+    <section class="email-list-section">
+        <a name="location"></a>
+        <h3>KAKO DO NAS?</h3>
+        <p class="subtitle">Možete nas pronaći na 2 lokacije u Lazarevcu!</p>
+        <div class="maps" style="display: flex; width: 90%; margin: auto;">
+            <div style="flex: 1; margin: 10px;">
+                <p class="subtitle">GALERIJA</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d377.6181631049695!2d20.257523397342638!3d44.38406085162637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a01a96b502b6f%3A0x562ae77d848fe63c!2sEuro%20Stil%20Home!5e0!3m2!1ssr!2srs!4v1657793580051!5m2!1ssr!2srs"
+                    width="100%" height="450" style="border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div style="flex: 1; margin: 10px;">
+                <p class="subtitle">PROIZVODNJA</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2851.540836087985!2d20.230423051175794!3d44.38101847900059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4759f98eadb291c5%3A0xe8066248a5e549d0!2sEuro%20Stil%20namestaj!5e0!3m2!1ssr!2srs!4v1657793791389!5m2!1ssr!2srs"
+                    width="100%" height="450" style="border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--<section class="pricing-section">
+        <div class="wrapper">
+            <h3>Services</h3>
+            <p class="subtitle">We do lots of cool things</p>
+            <ul class="pricing-table">
+                <li>
+                    <div class="price-container">
+                        <span class="currency-symbol" style="left: 40px;">$</span>
+                        <span class="price">9</span>
+                        <span class="term">/mo</span>
+                    </div>
+                    <h5>Basic</h5>
+                    <ul class="features">
+                        <li>500GB Storage</li>
+                        <li>Unlimited Bandwidth</li>
+                        <li>10 Clients</li>
+                        <li>50 Projects</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <a href="#" class="button-2">Begin</a>
+                </li>
+                <li>
+                    <div class="price-container">
+                        <span class="currency-symbol" style="left: 20px;">$</span>
+                        <span class="price">12</span>
+                        <span class="term">/mo</span>
+                    </div>
+                    <h5>Premium</h5>
+                    <ul class="features">
+                        <li>1TB Storage</li>
+                        <li>Unlimited Bandwidth</li>
+                        <li>50 Clients</li>
+                        <li>250 Projects</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <a href="#" class="button-1">Begin</a>
+                </li>
+                <li>
+                    <div class="price-container">
+                        <span class="currency-symbol" style="left: 20px;">$</span>
+                        <span class="price">18</span>
+                        <span class="term">/mo</span>
+                    </div>
+                    <h5>Elite</h5>
+                    <ul class="features">
+                        <li>5TB Storage</li>
+                        <li>Unlimited Bandwidth</li>
+                        <li>Unlimited Clients</li>
+                        <li>Unlimited Projects</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <a href="#" class="button-2">Begin</a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </section>
+
+    <section class="text-section">
+        <div class="text align-center">
+            <h3>Heard Enough?</h3>
+            <p class="subtitle">Let's get started</p>
+            <p><a href="#" class="button-1">Begin</a></p>
+        </div>
+    </section>-->
+
+    <footer>
+        <div class="wrapper">
+            <img class="logo" style="height: 100px;" src="images/logo-white.png" />
+            <div class="footer-left">
+                <p class="copyright">Copyright 2022 &copy;</p>
+                <!--<p class="footer-links"><a href="#">Contact Us</a> I <a href="#">Terms &amp; Conditions</a> I<a href="#">Privacy</a></p>-->
+            </div>
+            <div class="footer-right">
+                <a href="https://www.facebook.com/Euro-Stil-Lazarevac-1200775403324042" class="social facebook">Facebook</a>
+                <a href="https://www.instagram.com/eurostil.la/" class="social instagram">Instagram</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+</body>
+
+</html>
